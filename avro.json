@@ -1,0 +1,135 @@
+{
+  "namespace": "data.avro",
+  "name": "data",
+  "type": "record",
+  "fields": [
+    {
+      "name": "erpData",
+		  "type": {
+  			"type": "record",
+  			"name": "spec",
+  			"fields": [
+        {
+  				"name": "customerNumber",
+  				"type": "string"
+  			}, {
+  				"name": "materialNumber",
+  				"type": "string"
+  			}, {
+  				"name": "orderNumber",
+  				"type": "string"
+  			}, {
+  				"name": "timeStamp",
+  				"type": "string"
+  			}]
+		}
+    },{
+		"name": "specData",
+		"type": {
+			"namespace": "data.avro",
+			"type": "record",
+			"name": "specdat",
+			"fields": [{
+				"name": "em1",
+				"type": "double"
+			}, {
+				"name": "em2",
+				"type": "double"
+			}, {
+				"name": "a1",
+				"type": "double"
+			}, {
+				"name": "a2",
+				"type": "double"
+			}, {
+				"name": "b2",
+				"type": "double"
+			}, {
+				"name": "b1",
+				"type": "double"
+			}, {
+				"name": "overallStatus",
+				"type": "string"
+			}, {
+				"name": "ts_start",
+				"type": "double"
+			}, {
+				"name": "ts_stop",
+				"type": "double"
+			}]
+		}
+	},{
+      "name": "prodData",
+      "type": {
+        "type": "array",
+        "items": {
+          "name": "item",
+          "type": "record",
+          "fields": [
+  					{
+              "name": "value",
+  						"type": ["int", "double", "string", "boolean"]
+  					},{
+  						"name": "status",
+  						"type": "string"
+  					},{
+  						"name": "itemName",
+  						"type": "string"
+  					},{
+  						"name": "timestamp",
+  						"type": "int"
+  					}
+          ]
+        }
+      }
+    }
+  ]
+}
+
+[
+   {
+      "columnName":"erpData",
+      "dataType":{
+         "values":"string",
+         "type":"map"
+      },
+      "waterMark":false,
+      "primaryKey":0,
+      "length":40,
+      "precision":0,
+      "scale":0,
+      "isNullable":true,
+      "comment":"erpData",
+      "unique":false
+   },
+   {
+      "columnName":"specData",
+      "dataType":{
+         "values":"string",
+         "type":"map"
+      },
+      "waterMark":false,
+      "primaryKey":0,
+      "length":80,
+      "precision":0,
+      "scale":0,
+      "isNullable":true,
+      "comment":"specData",
+      "unique":false
+   },
+   {
+       "columnName":"prodData",
+       "dataType":{
+          "items":"string",
+          "type":"array"
+       },
+       "waterMark":false,
+       "primaryKey":0,
+       "length":60,
+       "precision":0,
+       "scale":0,
+       "isNullable":true,
+       "comment":"prodData",
+       "unique":false
+    },
+]

@@ -1,0 +1,5 @@
+com/project/FixedSchemaKafkaDeserializerExtractor.class
+com/project/FixedSchemaJsonIntermediateToAvroConverter.class
+com/project/App.class
+com/project/FixedSchemaJsonStringToJsonIntermediateConverter.class
+com/project/FixedSchemaKafkaDeserializerSource.class

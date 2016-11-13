@@ -1,0 +1,5 @@
+/Users/jlagarden/Projects/DHBW/projekt/gobblin/gobblin/src/main/java/com/project/FixedSchemaKafkaDeserializerExtractor.java
+/Users/jlagarden/Projects/DHBW/projekt/gobblin/gobblin/src/main/java/com/project/FixedSchemaJsonIntermediateToAvroConverter.java
+/Users/jlagarden/Projects/DHBW/projekt/gobblin/gobblin/src/main/java/com/project/FixedSchemaKafkaDeserializerSource.java
+/Users/jlagarden/Projects/DHBW/projekt/gobblin/gobblin/src/main/java/com/project/FixedSchemaJsonStringToJsonIntermediateConverter.java
+/Users/jlagarden/Projects/DHBW/projekt/gobblin/gobblin/src/main/java/com/project/App.java
